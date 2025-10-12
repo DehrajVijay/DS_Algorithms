@@ -33,6 +33,7 @@ public class BuyAndSellStock {
 	 * @return
 	 */
 
+	
 	public static int maxProfit(int[] prices) {
 		int min = prices[0];
 		int profit = 0;
