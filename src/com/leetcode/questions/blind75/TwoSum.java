@@ -29,7 +29,8 @@ public class TwoSum {
 	}
 
 	/**
-	 * Approach 2nd : Using HashMap for better time complexity O(N) and space complexity O(N).
+	 * Approach 2nd : Using HashMap for better time complexity O(N) and space
+	 * complexity O(N).
 	 * 
 	 * @param args
 	 */
