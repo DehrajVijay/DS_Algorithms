@@ -41,7 +41,7 @@ public class TwoSum {
 		for (int i = 0; i < nums.length; i++) {
 			int difference = target - nums[i];
 			if (map.containsKey(difference)) {
-				return new int[] { map.get(difference), i };
+				return new int[] { map.get(difference), i };// map.get() method returns the value to the specific key.
 			}
 			map.put(nums[i], i);
 		}
@@ -52,7 +52,7 @@ public class TwoSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] nums = { 2, 7, 11, 15 };
-		int target = 200;
+		int target = 18;
 		int[] result = twoSumUsingHashMap(nums, target);
 		System.out.println("Output =" + Arrays.toString(result));
 
@@ -67,7 +67,7 @@ public class TwoSum {
  * the best solution as time complexity for this will be O(n)2 because for every
  * element we have to iterate the entire array.
  * 
- * Approach 2 is optimal:
+ * Approach 2 is optimal: Use Hash Map.
  * 
  * 
  */

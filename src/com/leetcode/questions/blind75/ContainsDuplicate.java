@@ -7,12 +7,12 @@ import java.util.Set;
 //https://leetcode.com/problems/contains-duplicate/description/?envType=problem-list-v2&envId=oizxjoit
 //Question 217
 public class ContainsDuplicate {
-/**
- * Brute force approach : 
- * Time complexity O (n^2)
- * @param nums
- * @return
- */
+	/**
+	 * Brute force approach : Time complexity O (n^2) { 11, 2, 3, 1, 45, 21, 2, 4 }
+	 * 
+	 * @param nums
+	 * @return
+	 */
 	public boolean containsDuplicate(int[] nums) {
 		boolean flag = false;
 		for (int i = 0; i < nums.length; i++) {
@@ -29,9 +29,10 @@ public class ContainsDuplicate {
 	}
 
 	/**
-	 * second way by sorting array.
-	 * Time complexity : O(n log n) because O(n) for sorting and log n for the comparison.
-	 * Space complexity: O(1)
+	 * second way by sorting array. Time complexity : O(n log n) because O(n) for
+	 * sorting and log n for the comparison. Space complexity: O(1) constant.
+	 * { 11, 2, 3, 1, 45, 21, 2, 4 }
+	 * [1, 2, 2, 3, 4, 11, 21, 45]
 	 * @param nums
 	 * @return
 	 */
@@ -56,14 +57,14 @@ public class ContainsDuplicate {
 	}
 
 	/**
-	 * Optimal aproach : 
-	 * Time complexity O(n)
-	 * space complexity O(n) : Because we are storing elements in HashSet.
-	 * HashSet : Best for searching operations because it takes O(1) time to search.
+	 * Optimal approach : Time complexity O(n) space complexity O(n) : Because we
+	 * are storing elements in HashSet. HashSet : Best for searching operations
+	 * because it takes O(1) time to search.
+	 * 
 	 * @param nums
 	 * @return
 	 */
-	
+
 	public boolean containsDuplicateByHashSet(int[] nums) {
 
 		Set<Integer> visited = new HashSet<>();
@@ -87,7 +88,7 @@ public class ContainsDuplicate {
 		int[] nums = { 11, 2, 3, 1, 45, 21, 2, 4 };
 		ContainsDuplicate cd = new ContainsDuplicate();
 		// System.out.println("Result: " + cd.containsDuplicate(nums));
-		// System.out.println("Result:" + cd.containsDuplicateBySort(nums));
+		 System.out.println("Result:" + cd.containsDuplicateBySort(nums));
 
 		System.out.println("Result:" + cd.containsDuplicateByHashSet(nums));
 
