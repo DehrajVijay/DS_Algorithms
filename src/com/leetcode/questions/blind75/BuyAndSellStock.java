@@ -25,7 +25,7 @@ public class BuyAndSellStock {
 	}
 
 	/**
-	 * This is the optical approach to solve this problem. 
+	 * This is the optimal approach to solve this problem. 
 	 * Time complexity O(n)
 	 *  space complexity O(1)
 	 * 
