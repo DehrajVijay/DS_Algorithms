@@ -1,0 +1,23 @@
+# --- Java Specific ---
+*.class
+*.jar
+*.war
+*.ear
+
+# --- Eclipse Specific ---
+# The folder where Eclipse puts your compiled classes
+bin/
+
+# Metadata and settings
+.metadata
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders and launch configs
+.externalToolBuilders/
+*.launch
+
+# --- OS Specific (Optional but recommended) ---
+.DS_Store
+thumbs.db
