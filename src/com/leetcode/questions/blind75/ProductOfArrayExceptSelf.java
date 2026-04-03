@@ -16,7 +16,7 @@ public class ProductOfArrayExceptSelf {
 		int[] post = new int[n];
 		int[] answer = new int[n];
 		pre[0] = 1;
-		for (int i = 1; i < nums.length; i++) {
+		for (int i = 1; i < n; i++) {
 			pre[i] = nums[i - 1] * pre[i - 1];
 		}
 		/*
