@@ -21,7 +21,8 @@ public class ContainerWithMostWater {
 	}
 
 	/**
-	 * 
+	 * Time Complexity: O(n) — We traverse the array exactly once.
+	 * Space Complexity:O(1) — No extra data structures are used.
 	 * @param height
 	 * @return
 	 */
